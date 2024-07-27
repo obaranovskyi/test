@@ -12,6 +12,7 @@ class Animal:
 class Mammal(Animal):
     def __init__(self, name, age, mammal_type):
         super().__init__(name, age)
+        # new updates
         self.mammal_type = mammal_type
 
     def run(self):
@@ -20,6 +21,7 @@ class Mammal(Animal):
 class Bird(Animal):
     def __init__(self, name, age, bird_type):
         super().__init__(name, age)
+        # some new updates
         self.bird_type = bird_type
 
     def fly(self):
@@ -28,6 +30,7 @@ class Bird(Animal):
 class Fish(Animal):
     def __init__(self, name, age, fish_type):
         super().__init__(name, age)
+        # and even more updates
         self.fish_type = fish_type
 
     def swim(self):
