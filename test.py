@@ -12,6 +12,7 @@ class Animal:
 class Mammal(Animal):
     def __init__(self, name, age, mammal_type):
         super().__init__(name, age)
+        # This will be the conflict
         self.mammal_type = mammal_type
 
     def run(self):
@@ -20,6 +21,7 @@ class Mammal(Animal):
 class Bird(Animal):
     def __init__(self, name, age, bird_type):
         super().__init__(name, age)
+        # and one more conflict
         self.bird_type = bird_type
 
     def fly(self):
@@ -41,6 +43,7 @@ class Zoo:
         self.animals.append(animal)
 
     def remove_animal(self, animal):
+        # this isn't conflict place
         self.animals.remove(animal)
 
     def show_animals(self):
